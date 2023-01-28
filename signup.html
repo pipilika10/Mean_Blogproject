@@ -12,6 +12,9 @@
             width:800px;
             background-image: url('images/m2.jpg');
         }
+        .navbar {
+            
+        }
         ul{
             margin-right:200px;
             padding-right:200px;
@@ -77,14 +80,15 @@
         <div class="row text-center">
         <div class="col-xs-5">
             <h2>Register to Access</h2>
-        <table cell-spacing="50px" cell-padding="50px">
-            <tr><th>First Name:</th><td><input type="text" name="fname" id="ufname" required/></td></tr>
-            <tr><th>Last Name:</th><td><input type="text" name="lname" id="ulname" /></td></tr>
-            <tr><th>Email:</th><td><input type="email" name="email" id="uemail" required/></td></tr>
-            <tr><th>Password:</th><td><input type="password" name="password" id="upass" required/></td></tr>
-            <tr><th>Contact No.:</th><td><input type="number" name="contact" id="ucontact" required/></td></tr>
-            <tr><th>Address:</th><td><input type="text" name="address" id="uaddress" /></td></tr>
-            <tr><td><input type="reset" value="Refresh" class="btn btn-lg-active"/></td><td><input type="submit" value="Get Receipt" onkeyup="printReceipt" class="btn btn-danger"/></td></tr>
+            <table cell-spacing="50px" cell-padding="50px">
+                <tr><th>First Name:</th><td><input type="text" name="fname" id="ufname" required /></td></tr>
+                <tr><th>Last Name:</th><td><input type="text" name="lname" id="ulname" /></td></tr>
+                <tr><th>Email:</th><td><input type="email" name="email" id="uemail" required /></td></tr>
+                <tr><th>Password:</th><td><input type="password" name="password" id="upass" required /></td></tr>
+                <tr><th>Confirm Password:</th><td><input type="password" name="password" id="upass" required /></td></tr>
+                <tr><th>Contact No.:</th><td><input type="number" name="contact" id="ucontact" required /></td></tr>
+                <tr><th>Address:</th><td><input type="text" name="address" id="uaddress" /></td></tr>
+                <tr><td><input type="reset" value="Refresh" class="btn btn-lg-active" /></td><td><input type="submit" value="Get Receipt" onkeyup="printReceipt" class="btn btn-danger" /></td></tr>
             </table></div>
         <script>
             var x1 = document.getElementByid("ufname").innerHTML;
