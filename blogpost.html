@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" href="index.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <meta charset="utf-8" />
+        <title>Blogpost</title>
+        <style>
+            container-fluid {
+                min-height: 680px;
+                width: 800px;
+                background-image: url('images/m2.jpg');
+            }
+
+            ul {
+                margin-right: 200px;
+                padding-right: 200px;
+            }
+
+            li {
+                margin-right: 200px;
+                text-align: center;
+                font-size: 24px;
+            }
+
+            table {
+                position: absolute;
+                height: 500px;
+                width: 600px;
+                margin-left: 200px;
+                margin-bottom: 100px;
+                border-radius: 15px;
+                box-shadow: 10px 10px 0px -5px rgb(128, 128, 128,0.5);
+            }
+
+            td {
+                height: 80px;
+                width: 200px;
+                margin-left: 100px;
+                border-radius: 15px;
+                box-shadow: 10px 10px 5px -5px rgb(128, 128, 128,0.5);
+            }
+
+            input {
+                width: 400px;
+                height: 50px;
+                border-radius: 15px;
+            }
+
+            .btn {
+                width: 200px;
+                border-radius: 15px;
+            }
+
+            .panel {
+                position: relative;
+                float: right;
+                height: 500px;
+                width: 400px;
+                margin: 100px;
+                border-radius: 20px;
+            }
+            .btn-danger:hover{
+                background-color:green;
+            }
+            .btn-danger:focus{
+                background-color:darkgreen;
+            }
+            .btn-lg-active{
+                background-color:firebrick;
+                color:#ffffff;
+            }
+            .btn-lg-active:focus-visible {
+                background-color: firebrick;
+            }
+        </style>
+    </head>
+    <body bgcolor="#ccccff">
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-md navbar-light bg-light navbar-fixed-top" style="background-image:url('images/m2.jpg');">
+                <a class="navbar-brand" href="home.html" style="margin:80px;"><img src="images/Blogo.jpg" height="100" width="200" alt="Bloglogo" /><br />BOGGLE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAltMarkup" aria-controls="navbarAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarAltMarkup">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="accordion.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="signup.html">SignUp</a></li>
+                        <li class="nav-item"><a class="nav-link" href="signin.html">SignIn</a></li>
+                        <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blogpost.html">WantToBlog?</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <form name="authordetail1" class="row g-3" onsubmit="return submitData()">
+                    <h2 style="color:darkblue;">Author Connect</h2>
+                    <div class="col-xs-4">
+                        <label for="validate1" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="validate1" name="fname" required>
+                    </div>
+                    <div class="col-xs-4">
+                        <label for="validate2" class="form-label">Last name</label>
+                        <input type="text" name="lname" class="form-control" id="validate2" required>
+                    </div>
+                    <div class="col-xs-4">
+                        <label for="validateuser" class="form-label">Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputgp2">@gmail.com</span>
+
+                            <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+                            <button class="btn btn-lg-active dropdown-toggle" data-bs-toggle="dropdown" type="button">Verify</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="signin.html">Login</a></li>
+                                <li><a class="dropdown-item" href="#">GetUserId</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <label for="validate3" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validate3" required>
+                    </div>
+                    <div class="col-xs-3">
+                        <label for="validate4" class="form-label">State</label>
+                        <select class="form-select" id="validate4" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-3">
+                        <label for="validate5" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="validate5" required>
+                    </div>
+
+
+                    <h2 style="color:darkblue;">Enter BLOG description</h2>
+
+                    <div class="form-floating mb-3 mt-3 ">
+                        <input type="text" class="form-control" id="title" required placeholder="Title of Blog" name="title">
+                        <label for="title">Blog Title</label>
+                    </div>
+
+                    <div class="form-floating mb-3 mt-3">
+                        <textarea class="form-control" rows="10" id="content" name="content" placeholder="Content of blog" required></textarea>
+                        <label for="content">Blog Text</label>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalid2" required>
+                            <label class="form-check-label" for="invalid2">
+                                Agree to terms and conditions
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-danger" type="submit">Submit form</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <footer class="mt-5 navbar navbar-expand-sm bg-dark navbar-dark bottom">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">ContactUs at 2143987605</a>
+                        <a class="nav-link active" aria-current="page" href="#">Whatsapp :10209384756</a>
+                        <a class="nav-link active" aria-current="page" href="#">email at kiddocblogs@gmail.com</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:200px;margin-right:100px;">
+                        <a class="nav-link" href="signout.html">ReviewBlogs</a>
+                    </li>
+                </ul>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed text-white bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Blogging Details for Freelance Authors
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <strong>Freelance Authors need to Register to Blog page and accept notifications from Company website to Post blogs in the blog Page</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <script src="formSubmit.js"></script>
+</body>
+</html>
+</body>
+</html>
