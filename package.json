@@ -1,0 +1,17 @@
+{
+  "name": "mean_phase1_blog-project",
+  "version": "0.0.0",
+  "description": "Mean_Phase1_BlogProject",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  },
+  "eslintConfig": {},
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3"
+  }
+}

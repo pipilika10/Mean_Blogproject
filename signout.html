@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>signout</title>
+    <style>
+        .container-fluid {
+            min-height: 600px;
+            width: auto;
+        
+        }
+
+        ul {
+            margin-right: 200px;
+            padding-right: 200px;
+            margin-top: 200px;
+            text-align: center;
+        }
+
+        li {
+            margin-right: 200px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .panel {
+          
+            margin: 100px;
+            height: 600px;
+            width: 400px;
+        }
+
+        .a {
+            background-color: orangered;
+        }
+
+            .a:focus {
+                background-color: blueviolet;
+            }
+
+            .a:visited {
+                background-color: darkcyan;
+            }
+
+        table {
+            height: 200px;
+            width: 200px;
+            margin-bottom: 100px;
+            border-radius: 15px;
+            box-shadow: 10px 10px 0px -5px rgb(128, 128, 128,0.5);
+        }
+
+        td {
+            height: 50px;
+            width: 200px;
+            margin-left: 10px;
+            border-radius: 15px;
+            box-shadow: 10px 10px 5px -5px rgb(128, 128, 128,0.5);
+        }
+
+        input {
+            width: 400px;
+            height: 50px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+  
+        <div class="navbar navbar-expand-md navbar-light bg-light navbar-fixed-top" style="background-image:url('images/m2.jpg');">
+            <a class="navbar-brand" href="home.html"><img src="images/Blogo.jpg" height="100" width="200" alt="Bloglogo" /><br />BOGGLE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAltMarkup" aria-controls="navbarAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarAltMarkup">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="accordion.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signup.html">SignUp</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signin.html">SignIn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="blogpost.html" aria-disabled="true">WantToBlog?</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <img src="images\thank-you-10840728.jpg" height="400" alt="thank you" />
+            <div class="panel" style="position:relative;float:right;">
+                <div class="panel-heading"><h2>Sign out</h2></div>
+                <div class="panel-body">
+                    <table>
+
+                        <tr><td>username</td><td><input type="email" placeholder="email" id="username" name="uemail" required /></td></tr>
+                        <tr><td>Give feedback</td><td><textarea></textarea></td></tr>
+                    </table>
+                    <a href="changepass.html">Forgot password?</a><input type="button" class="btn btn-lg-actuve" id="submit" value="SignOut" />
+                </div>
+            </div>
+            </div>
+            <footer class="mt-5 navbar navbar-expand-sm bg-dark navbar-dark bottom" style="width:auto;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">ContactUs at 2143987605</a>
+                        <a class="nav-link active" aria-current="page" href="#">Whatsapp :10209384756</a>
+                        <a class="nav-link active" aria-current="page" href="#">email at kiddocblogs@gmail.com</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:200px;margin-right:100px;">
+                        <a class="nav-link" href="signout.html">ReviewBlogs</a>
+                    </li>
+                </ul>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed text-white bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Blogging Details for Freelance Authors
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <strong>Freelance Authors need to Register to Blog page and accept notifications from Company website to Post blogs in the blog Page</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+</body>
+</html>

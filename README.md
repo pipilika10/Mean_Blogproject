@@ -1,2 +1,3 @@
-# Mean_Blogproject
-BloggingProject for simplilearn's Meanstack course
+# Mean_Phase1_BlogProject
+
+

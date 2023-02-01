@@ -47,6 +47,7 @@
              border-radius:15px;
              box-shadow:10px 10px 0px -5px rgba(0,0,0,0.5);
          }
+         
      </style> 
 
 </head> 
@@ -58,11 +59,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarAltMarkup">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="accordion.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="signup.html">SignUp</a></li>
                 <li class="nav-item"><a class="nav-link" href="signin.html">SignIn</a></li>
                 <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
-                <li class="nav-item"><a class="nav-link" href="blogpost.html">WantToBlog?</a></li>
+                <li class="nav-item"><a class="nav-link disabled" href="blogpost.html" aria-disabled="true">WantToBlog?</a></li>
             </ul>
         </div>
     </div>
@@ -181,18 +182,27 @@
     <footer class="mt-5 navbar navbar-expand-sm bg-dark navbar-dark bottom">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">ContactUs</a>
+                <a class="nav-link active" aria-current="page" href="#">ContactUs at 2143987605</a>
+                <a class="nav-link active" aria-current="page" href="#">Whatsapp :10209384756</a>
+                <a class="nav-link active" aria-current="page" href="#">email at kiddocblogs@gmail.com</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">ReviewBlogs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">GetNotified</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <li class="nav-item" style="margin-left:200px;margin-right:100px;">
+                <a class="nav-link" href="signout.html">ReviewBlogs</a>
             </li>
         </ul>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed text-white bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Blogging Details for Freelance Authors
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <strong>Freelance Authors need to Register to Blog page and accept notifications from Company website to Post blogs in the blog Page</strong>
+                </div>
+            </div>
+
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

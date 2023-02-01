@@ -1,0 +1,64 @@
+﻿body
+{
+}
+
+    $carousel-control-color:$blue;
+    $carousel-control-width:25%;
+    $carousel-control-opacity:.5;
+    $carousel-control-hover-opacity:.9;
+    $carousel-control-transition:opacity .15s ease;
+
+    $carousel-indicator-width:50px;
+    $carousel-indicator-height:5px;
+    $carousel-indicator-hit-area-height:10px;
+    $carousel-indicator-spacer:3px;
+    $carousel-indicator-opacity:.5;
+    $carousel-indicator-active-bg:$white;
+    $carousel-indicator-active-opacity:1;
+    $carousel-indicator-transition:opacity .6s ease;
+
+    $carousel-caption-width:70%;
+    $carousel-caption-color:$white;
+    $carousel-caption-padding-y:1.25rem;
+    $carousel-caption-spacer:1.25rem;
+
+    $carousel-control-icon-width:2rem;
+    $carousel-transition-duration:.6s;
+    $carousel-transition:transform $carousel-transition-duration ease-in-out;
+
+
+
+
+    $dropdown-min-width: 10rem;
+    $dropdown-padding-x: 0;
+    $dropdown-padding-y: .5rem;
+    $dropdown-spacer: .125rem;
+    $dropdown-font-size: $font-size-base;
+    $dropdown-color: $body-color;
+    $dropdown-bg: $white;
+    $dropdown-border-color: var(--#{$prefix}border-color-translucent);
+    $dropdown-border-radius: $border-radius;
+    $dropdown-border-width: $border-width;
+    $dropdown-inner-border-radius: subtract($dropdown-border-radius, $dropdown-border-width);
+    $dropdown-divider-bg: $dropdown-border-color;
+    $dropdown-divider-margin-y: $spacer * .5;
+    $dropdown-box-shadow: $box-shadow;
+
+    $dropdown-link-color: $gray-900;
+    $dropdown-link-hover-color: shade-color($dropdown-link-color, 10%);
+    $dropdown-link-hover-bg: $gray-200;
+
+    $dropdown-link-active-color: $component-active-color;
+    $dropdown-link-active-bg: $component-active-bg;
+
+    $dropdown-link-disabled-color: $gray-500;
+
+    $dropdown-item-padding-y: $spacer * .25;
+    $dropdown-item-padding-x: $spacer;
+
+    $dropdown-header-color: $gray-600;
+    $dropdown-header-padding-x: $dropdown-item-padding-x;
+    $dropdown-header-padding-y: $dropdown-padding-y;
+    // fusv-disable
+    $dropdown-header-padding: $dropdown-header-padding-y $dropdown-header-padding-x; // Deprecated in v5.2.0
+    // fusv-enable
